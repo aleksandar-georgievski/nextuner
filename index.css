@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(248, 241, 241);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.brand-name {
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-list li a,
+.login {
+    color: rgb(122, 121, 121);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.selected {
+    color: #2DB453;
+}
+
+
+.btn-sign {
+    padding: 8px 25px;
+    margin-left: 15px;
+    background-color: #2DB453;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* SECTION 1 */
+.hero {
+    width: 100%;
+    height: 70vh;
+    background-color: #eee;
+    background-image: url('./img/hero-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 70%;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 55px;
+}
+
+.hero-content .p-1 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+#search {
+    background-color: #fff;
+    padding: 0.5em 15px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-search {
+    padding: 10px 10px;
+}
+
+#search-input {
+    display: inline-block;
+    border: none;
+    /* width: 90%; */
+    height: 3em;
+    margin-left: 15px;
+}
+
+#search-input::placeholder {
+    /* padding-left: 20px; */
+    font-size: 16px;
+}
+
+.hero-content .p-2 {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Section 2 */
+
+main {
+    margin: 60px 130px;
+    background-color: #000;
+}
+
+.stations {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stations h3 {
+    color: rgb(97, 93, 93);
+    margin-bottom: 20px;
+}
+
+.featured-stations {
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-bottom: 100px;
+}
+
+.station-box {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.station-img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.station-box p {
+    font-size: 15px;
+    color: rgb(97, 93, 93);
+}
+
+.popular-box {
+    display: flex;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgb(165, 161, 161);
+}
+
+.popular-box-content {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.popular-box-content p:nth-child(1) {
+    font-weight: bold;
+    color: rgb(97, 93, 93);
+}
+
+.popular-box-content p:nth-child(2) {
+    color: rgb(155, 153, 153);
+}
+
+
+
+.popular-music-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.left-side {
+    /* background-color: blue; */
+    width: 75%;
+}
+
+.left-side h3 {
+    color: rgb(97, 93, 93);
+    margin-left: 12px;
+}
+
+.right-side {
+    /* background-color: red; */
+    width: 25%;
+}
+
+/* Section 3 */
+.genres {
+    width: 70%;
+}
+
+.genres h3 {
+    color: rgb(97, 93, 93);
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+.genres-list li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.genres li a {
+    color: rgb(63, 62, 62);
+    background-color: rgb(167, 158, 158);
+    border: 1px solid rgb(194, 191, 191);
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.genres .genre-selected {
+    background-color: #2DB453;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(77, 74, 74);
+    padding: 20px 80px 0px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.footer-brand .brand-name {
+    color: #fff;
+}
+
+.footer-brand p {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.footer-services {
+    display: flex;
+}
+
+.footer-services ul {
+    margin: 0 20px;
+}
+
+.footer-services ul li {
+    padding: 5px 0px;
+}
+
+.footer-services ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.services-title {
+    text-transform: uppercase;
+}
+
+footer .fa {
+    padding: 15px;
+    background-color: rgb(107, 106, 106);
+    color: #fff;
+    border-radius: 50px;
+    margin: 0px 5px;
+}
